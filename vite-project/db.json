@@ -1,0 +1,89 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "name": "Мужская футболка",
+      "price": "1500₽",
+      "image": "https://images.uzum.uz/crtu1040u44g6joq03fg/t_product_540_high.jpg#1735457599605"
+    },
+    {
+      "id": 2,
+
+      "name": "Женская куртка",
+      "price": "3500₽",
+      "image": "https://images.uzum.uz/crtu0hji153t30unnr50/t_product_540_high.jpg#1735457670878"
+    },
+    {
+      "id": 3,
+
+      "name": "Джинсы мужские",
+      "price": "2500₽",
+      "image": "https://images.uzum.uz/cth8n7ei4n368aac4mo0/t_product_540_high.jpg#1735457670861"
+    },
+    {
+      "id": 4,
+
+      "name": "Платье летнее",
+      "price": "2700₽",
+      "image": "https://images.uzum.uz/cqt797esbq7g1s98s510/t_product_540_high.jpg#1735457671019"
+    },
+
+    {
+      "id": 5,
+
+      "name": "Мужские ботинки",
+      "price": "4000₽",
+      "image": "https://images.uzum.uz/clbfuo5ennt861iq0kdg/t_product_540_high.jpg#1735457415730"
+    },
+    {
+      "id": 6,
+
+      "name": "Женские туфли",
+      "price": "3500₽",
+      "image": "https://images.uzum.uz/cpgmr4ffrr82f0a5ktug/t_product_540_high.jpg#1735457415744"
+    },
+    {
+      "id": 7,
+
+      "name": "Кроссовки мужские",
+      "price": "4500₽",
+      "image": "https://images.uzum.uz/cpgmr3u0t1llbtq5mh30/t_product_540_high.jpg#1735457415832"
+    },
+    {
+      "id": 8,
+
+      "name": "Сандалии женские",
+      "price": "3000₽",
+      "image": "https://images.uzum.uz/ctaqe8dpb7f7ago7rjug/t_product_540_high.jpg#1735457415793"
+    },
+
+    {
+      "id": 9,
+
+      "name": "Часы мужские",
+      "price": "5000₽",
+      "image": "https://images.uzum.uz/ct1m08lpq3ggq63f4vng/t_product_540_high.jpg#1735457812999"
+    },
+    {
+      "id": 10,
+
+      "name": "Сумка женская",
+      "price": "2500₽",
+      "image": "https://images.uzum.uz/cnlugrsu2hhlb05h7bc0/t_product_540_high.jpg#1735457813002"
+    },
+    {
+      "id": 11,
+
+      "name": "Очки солнцезащитные",
+      "price": "1500₽",
+      "image": "https://images.uzum.uz/cshme134nkdv7h9ifuv0/t_product_540_high.jpg#1735457869955"
+    },
+    {
+      "id": 12,
+
+      "name": "Ремень кожаный",
+      "price": "1200₽",
+      "image": "https://images.uzum.uz/co2hcpv2u18gghclu1n0/t_product_540_high.jpg#1735457936865"
+    }
+  ]
+}
