@@ -1,12 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import axios from "axios";
-import { FaRegStar } from "react-icons/fa";
+import { FaRegStar, FaSmile } from "react-icons/fa";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
-import { Button } from "antd";
-// import { useDispatch } from "react-redux";
-// import { LikedAddproducts } from "../../redux/market_slice";
+import { Button, notification, Rate } from "antd";
 
+import { useDispatch } from "react-redux";
+import { LikedAdd, ShopdAdd } from "../../redux/market_slice/market";
 function Products() {
   const getData = async () => {
     const res = await axios.get("http://localhost:3000/Products");
@@ -17,9 +17,23 @@ function Products() {
     queryFn: getData,
   });
 
+  const dispatch = useDispatch();
 
- 
+  const AddLikeProducts = (item) => {
+    dispatch(LikedAdd(item));
+    notification.open({
+      message: "Like bosildi",
+      type: "success",
+    });
+  };
 
+  const AddShopProducts = (item) => {
+    dispatch(ShopdAdd(item));
+    notification.open({
+      type:'warning',
+      message:"Savatga qo'shildi"
+    })
+  };
   return (
     <div>
       {isLoading || isError ? (
@@ -42,15 +56,19 @@ function Products() {
                   <p className="text-gray-500 text-lg">{value.price}</p>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-gray-50 rounded-b-lg">
-                  <Button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
+                  <Button
+                    onClick={() => AddShopProducts(value)}
+                    className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition"
+                  >
                     <MdOutlineAddShoppingCart />
                   </Button>
                   <button
-                    // onClick={addLiked(value)}
+                    onClick={() => AddLikeProducts(value)}
                     className=" absolute top-3 right-2 text-gray-600   text-[23px]"
                   >
                     <FaRegStar />
                   </button>
+                  <Rate/>
                 </div>
               </div>
             </div>

@@ -14,6 +14,9 @@ i18next.use(initReactI18next).init({
         catalog:
           "Одежда от известные брендов у нас в каталоге.Только качественные вещи.",
         btn: "Перейти в каталог",
+        price: "Рассчитать цена",
+        poizon:
+          "Если вам не удалось найти то, что искали, вы всегда можете воспользоваться автоматическим расчетом стоимость заказа намаркетплейсе Poizon, включая комиссию сервиса и доставку.",
       },
     },
     uz: {
@@ -28,6 +31,9 @@ i18next.use(initReactI18next).init({
         catalog:
           "Taniqli brendlarning kiyimlari bizning katalogimizda faqat yuqori sifatli mahsulotlar.",
         btn: "Kataloga otish",
+        price: "Hisoblash narxi",
+        poizon:
+          "Agar siz qidirayotgan narsangizni topa olmasangiz, har doim Poizon bozorida buyurtmangiz narxini avtomatik hisoblash, shu jumladan xizmat komissiyasi va yetkazib berishdan foydalanishingiz mumkin.",
       },
     },
     en: {
@@ -43,6 +49,9 @@ i18next.use(initReactI18next).init({
           "Clothes from well-known brands are in our catalogue. Only high-quality items.",
 
         btn: "Go to Catalog",
+        price: "Calculate price",
+        poizon:
+          "If you couldn't find what you were looking for, you can always use the automatic calculation of the cost of your order on the Poizon marketplace, including service commission and delivery.",
       },
     },
   },

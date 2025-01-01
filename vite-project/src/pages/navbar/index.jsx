@@ -7,13 +7,11 @@ import { Avatar, Badge, Button, Select } from "antd";
 import { useTranslation } from "react-i18next";
 import "../../locale";
 import { useNavigate } from "react-router-dom";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 function Navbar() {
-  // const LikeProduct = useSelector((state) => {
-  //   state.market.Liked;
-  // });
-  // console.log(LikeProduct);
+  const LikeProduct = useSelector((state) => state.market.Like);
+  const ShopProduct = useSelector((state) => state.market.Shop);
 
   const navigate = useNavigate();
   const { Option } = Select;
@@ -81,12 +79,12 @@ function Navbar() {
         </div>
         <div className="flex items-center gap-4">
           <FaSearch className="text-[22px] " />
-          <Badge count={3}>
+          <Badge count={LikeProduct.length}>
             <Button onClick={() => navigate("Like_page")}>
               <FaRegHeart className="text-[20px]" />
             </Button>
           </Badge>
-          <Badge count={3}>
+          <Badge count={ShopProduct.length}>
             <Button onClick={() => navigate("Shop")}>
               <CiShoppingBasket className="text-[20px]" />
             </Button>

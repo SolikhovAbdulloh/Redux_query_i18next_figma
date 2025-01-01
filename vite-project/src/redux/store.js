@@ -1,8 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { market } from "./market_slice/";
-
+import marketReducer from "./market_slice/market";
 export const store = configureStore({
   reducer: {
-    market,
+    market: marketReducer,
   },
 });

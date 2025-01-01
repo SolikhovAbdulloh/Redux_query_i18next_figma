@@ -3,25 +3,23 @@ import { BsTelegram } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Button, Input } from "antd";
 import tel from "../../assets/iphone.png";
+import { useTranslation } from "react-i18next";
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="flex relative text-[white]  p-[20px] rounded-xl mb-[50px] items-start bg-[#27b8fa]">
         <div className="mb-7  flex flex-col gap-9 justify-between items-start mt-4 p-4">
-          <p className="text-[61px] font-black">
-            Рассчитать <br /> стоимость
+          <p className="text-[61px] font-black">{t("price")}</p>
+          <p className="text-[16px] max-[300px]:font-normal !overflow-y-auto !max-h-[200px] !whitespace-normal !break-words">
+            {t("poizon")}
           </p>
-          <p className="text-[16px] font-normal">
-            Если вам не удалось найти то, что искали, вы всегда можете
-            <br />
-            воспользоваться автоматическим расчетом стоимость заказа на
-            <br />
-            маркетплейсе Poizon, включая комиссию сервиса и доставку.
-          </p>
-          <Button className="w-[294px] h-[66px] bg-black  text-white">Рассчитать стоимость</Button>
+          <Button className="w-[294px] h-[66px] bg-black  text-white">
+            {t("price")}
+          </Button>
         </div>
         <img
-          className="w-[367px] h-[580px] absolute bottom-3  right-0"
+          className="w-[367px] h-[580px] absolute top-0  right-0"
           src={tel}
         />
       </div>
